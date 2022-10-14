@@ -1,0 +1,125 @@
+// #about {
+//   background-color: white;
+// }
+
+#about {
+  transition: all ease-in-out 0.5s;
+}
+
+.app__about {
+  width: 100%;
+  height: 100%;
+}
+
+.head-text {
+  font-family: "Silkscreen", cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 5rem 1rem;
+  text-transform: capitalize;
+  transition: all ease-in-out 0.5s;
+  @media screen and (min-width: 700px) {
+    font-size: 2rem;
+    margin: 5rem auto;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 2rem;
+    margin: 5rem auto;
+    line-height: 1.5;
+  }
+
+  span {
+    color: var(--secondary-color);
+  }
+}
+
+.about-dark {
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+}
+
+.app__about-profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+
+  @media screen and (min-width: 700px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+    flex-wrap: nowrap;
+  }
+
+  .app__about-item {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    z-index: 1;
+
+    @media screen and (min-width: 700px) {
+      width: 40%;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 2rem;
+    }
+  }
+  img {
+    width: 270px;
+    height: 170px;
+    border-radius: 15px;
+    @media screen and (min-width: 700px) {
+      max-width: 100%;
+      height: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  h2,
+  p {
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--gray-color);
+  }
+
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
+.app__about-btn {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 1rem auto;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  color: var(--white-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    scale: 1.1;
+  }
+}

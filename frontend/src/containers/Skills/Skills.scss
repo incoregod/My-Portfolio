@@ -1,0 +1,166 @@
+#skills {
+  transition: all 0.5s ease-in-out;
+}
+
+.app__skills {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  .app__skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 700px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .app__skills-skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: 700px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 50%;
+        justify-content: space-around;
+        margin-top: 3rem;
+      }
+      @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        width: 50%;
+        // height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+      }
+
+      .app__skills-skill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background-color: var(--white-color);
+        border-radius: 5rem;
+        margin: 1rem;
+
+        img {
+          width: 60%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.app__skills-header {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Silkscreen", cursive;
+  font-weight: 100;
+  font-size: 1.3rem;
+  z-index: 2;
+
+  @media screen and (min-width: 700px) {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    margin-top: 0;
+  }
+  span {
+    color: var(--secondary-color);
+    &:nth-child(2) {
+      color: var(--gray-color);
+    }
+  }
+}
+.app__skills-experiencies {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 700px) {
+    margin: auto;
+  }
+}
+.app__skills-timeline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .app__skills-year {
+    margin: 1rem;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+  .app__skills-xp {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .app__skills-title {
+      font-weight: bold;
+    }
+    .app__skills-subtitle {
+      color: var(--gray-color);
+      font-size: 0.9rem;
+    }
+    .bla {
+      width: 150px;
+      height: 80px;
+      margin: 5px 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        filter: grayscale(1);
+        transition: all ease-in-out 0.5s;
+        &:hover {
+          filter: grayscale(0);
+          width: 100%;
+          height: 200%;
+        }
+      }
+    }
+  }
+}
+
+.skills-dark {
+  color: #fff !important;
+}
+
+.skills--dark {
+  background: var(--gray-color) !important;
+}
